@@ -2,12 +2,12 @@
 type: PageLayout
 title: Home
 colors: colors-a
-backgroundImage:
-  type: BackgroundImage
-  url: /images/bg1.jpg
-  backgroundSize: cover
-  backgroundPosition: center
-  backgroundRepeat: no-repeat
+backgroundVideo:
+  url: /bg-video.mp4
+  autoplay: true
+  loop: true
+  muted: true
+  playsInline: true
   opacity: 75
 sections:
   - elementId: ''
