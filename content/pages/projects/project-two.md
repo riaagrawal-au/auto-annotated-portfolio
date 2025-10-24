@@ -5,6 +5,7 @@ colors: colors-a
 date: '2025-10-24'
 client: Adityaveer Singh Dahiya
 description: >-
+You might have to refresh this page a lot I fear...
 ---
 <!-- 💖 "I love you because..." one-liner with sequential button -->
 <span id="love-line" style="display:inline-flex; align-items:center; gap:.4rem; flex-wrap:wrap;">
@@ -22,7 +23,6 @@ description: >-
     "
   >↻</button>
 </span>
-
 <script>
   (function () {
     // 📝 Your list of reasons (sequential order)
@@ -32,7 +32,7 @@ description: >-
       "you light up every room",
       "you could pull off a goatee",
       "you wear your shirt tucked out",
-      "you’re brave and thoughtful",
+      "you're brave and thoughtful",
       "you have a great pair of biceps and shoulders",
       "you smell great",
       "you have a early 2000-s professor vibe",
@@ -41,7 +41,7 @@ description: >-
       "you're curious",
       "you were chill with me bleeding to death in your house",
       "you sing 'Creep' well",
-      "you’re patient with me",
+      "you're patient with me",
       "you care about your hair alot",
       "you look cute wrapped up in a towel",
       "you have a lot of cheese in your repository",
@@ -57,32 +57,33 @@ description: >-
       "you are funny when you're high",
       "you're my boyfriend",
       "you have a list of the meds i need :)",
-      "you care about me so much and make me feel so loved and cared for"
-      "you're you -- and I wouldn't change a single thing about you
+      "you care about me so much and make me feel so loved and cared for",
+      "you're you -- and I wouldn't change a single thing about you"
     ];
-
+    
     const reasonEl = document.getElementById("love-reason");
     const btn = document.getElementById("love-next");
     if (!reasonEl || !btn) return;
-
-    let idx = 0;
-
+    
+    // Start at a random position on page load
+    let idx = Math.floor(Math.random() * REASONS.length);
+    
     // Update display
     function render() {
       reasonEl.textContent = REASONS[idx];
     }
-
+    
     // Advance through reasons sequentially
     btn.addEventListener("click", () => {
       idx++;
       if (idx >= REASONS.length) idx = 0; // loop back to first
       render();
     });
-
+    
     // Bonus: click the text itself to go next (mobile-friendly)
     reasonEl.addEventListener("click", () => btn.click());
-
-    // Initial display
+    
+    // Initial display with random starting point
     render();
   })();
 </script>
