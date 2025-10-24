@@ -16,7 +16,7 @@ sections:
     title: >-
       Hi Po!
     subtitle: >-
-      Can't believe it's already been 30 days with you (or, more accurately, 184 days since we've been dating but apparently we were just friends for the first 5 months)! Here's me attempting to code and vibe-code for our first month anniversary. I hope you like it and oversee some pages that I can't seem to edit anymore. 
+      Can't believe it's already been 31 days with you (or, more accurately, 184 days since we've been dating but apparently we were just friends for the first 5 months)! Here's me attempting to code and vibe-code for our first month anniversary. I hope you like it and oversee some pages that I can't seem to edit anymore. 
     styles:
       self:
         height: auto
