@@ -5,7 +5,7 @@ colors: colors-a
 date: '2025-10-24'
 client: Adityaveer Singh Dahiya, Ria Agrawal
 description: >-
-  A comprehensive list of couple-y **activities** we're contractually obligated to do together. Best believe bowling will be the last activity we get around to doing.
+  A comprehensive list of couple-y activities we're contractually obligated to do together. Best believe bowling will be the last activity we get around to doing.
 ---
 
 <!-- ✅ Project Checklist -->
