@@ -223,5 +223,5 @@ description: >-
 </script>
 
 
-> “... so that we can complete all the activities in a relationship”
+> “...haan hum relationship ke saarey activities one by one khatam karlengey”
 
