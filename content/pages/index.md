@@ -41,13 +41,9 @@ sections:
   - colors: colors-f
     type: FeaturedProjectsSection
     elementId: ''
-    actions:
-      - type: Link
-        label: See all projects
-        url: /projects
     showDate: false
     showDescription: true
-    showFeaturedImage: true
+    showFeaturedImage: false
     showReadMoreLink: true
     variant: variant-b
     projects:
