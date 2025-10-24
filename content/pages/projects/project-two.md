@@ -4,9 +4,9 @@ title: A Perfunctory List of Why I Love You
 colors: colors-a
 date: '2025-10-24'
 client: Adityaveer Singh Dahiya
-description: >-
-You might have to refresh this page a lot I fear...
+description: You might have to refresh this page a lot I fear...
 ---
+
 <!-- 💖 "I love you because..." one-liner with sequential button -->
 <span id="love-line" style="display:inline-flex; align-items:center; gap:.4rem; flex-wrap:wrap;">
   <span>I love you because&nbsp;</span>
