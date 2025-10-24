@@ -7,15 +7,61 @@ client: Awesome client
 description: >-
   It’s hard to imagine that I’ve that I wrote all this code by myself, probably because I worked with an entire team :) but they definitely followed my lead most of the time.
 ---
+<!-- 💖 One-line "I love you because..." cycler (random start) -->
+<section id="love-because" style="margin:1rem 0;">
+  <p style="display:flex; align-items:center; flex-wrap:wrap; gap:.5rem; font-size:1.1rem; line-height:1.6;">
+    <span>I love you because&nbsp;</span>
+    <span id="love-reason"
+          aria-live="polite"
+          style="font-weight:600; white-space:nowrap;"></span>
+    <button id="love-next"
+            type="button"
+            style="margin-left:.5rem; padding:.35rem .6rem; border:1px solid rgba(0,0,0,.15); border-radius:8px; background:#fff; cursor:pointer;">
+      ↻ Next
+    </button>
+  </p>
+  <noscript><em>(Enable JavaScript to rotate reasons.)</em></noscript>
+</section>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante lorem, tincidunt ac leo efficitur, feugiat tempor odio. Curabitur at auctor sapien. Etiam at cursus enim. Suspendisse sed augue tortor. Nunc eu magna vitae lorem pellentesque fermentum. Sed in facilisis dui. Nulla molestie risus in mi dapibus, eget porta lorem semper. Donec sed facilisis nibh. Curabitur eget dui in libero euismod commodo nec sit amet est. Etiam id ipsum aliquam, vehicula erat sit amet, consequat tortor.
+<script>
+  (function () {
+    const ROOT = document.getElementById('love-because');
+    if (!ROOT) return;
 
-Etiam facilisis lacus nec pretium lobortis. Praesent dapibus justo non efficitur efficitur. Nullam viverra justo arcu, eget egestas tortor pretium id. Sed imperdiet mattis eleifend. Vivamus suscipit et neque imperdiet venenatis. In malesuada sed urna eget vehicula. Donec fermentum tortor sit amet nisl elementum fringilla. Pellentesque dapibus suscipit faucibus. Nullam malesuada sed urna quis rutrum. Donec facilisis lorem id maximus mattis. Vestibulum quis elit magna. Vestibulum accumsan blandit consequat. Phasellus quis posuere quam.
+    // 👉 Edit this list to whatever you want (add/remove freely)
+    const REASONS = [
+      "of your hair",
+      "you are very kind",
+      "you light up every room",
+      "you’re brave and thoughtful",
+      "you make me laugh",
+      "you listen—really listen",
+      "your curiosity is contagious",
+      "you’re patient with me",
+      "you care about little things",
+      "you have a lot of cheese in your repository"
+    ];
 
-> “Everybody should learn to program a computer, because it teaches you how to think.”
+    const reasonEl = document.getElementById('love-reason');
+    const btn = document.getElementById('love-next');
 
-Vestibulum ullamcorper risus auctor eleifend consequat. Vivamus mollis in tellus ac ullamcorper. Vestibulum sit amet bibendum ipsum, vitae rutrum ex. Nullam cursus, urna et dapibus aliquam, urna leo euismod metus, eu luctus justo mi eget mauris. Proin felis leo, volutpat et purus in, lacinia luctus eros. Pellentesque lobortis massa scelerisque lorem ullamcorper, sit amet elementum nulla scelerisque. In volutpat efficitur nulla, aliquam ornare lectus ultricies ac. Mauris sagittis ornare dictum. Nulla vel felis ut purus fermentum pretium. Sed id lectus ac diam aliquet venenatis. Etiam ac auctor enim. Nunc velit mauris, viverra vel orci ut, egestas rhoncus diam. Morbi scelerisque nibh tellus, vel varius urna malesuada sed. Etiam ultricies sem consequat, posuere urna non, maximus ex. Mauris gravida diam sed augue condimentum pulvinar vel ac dui. Integer vel convallis justo.
+    // ▶ Start at a random index (no persistence)
+    let idx = Math.floor(Math.random() * REASONS.length);
 
-Nam rutrum magna sed pellentesque lobortis. Etiam quam mauris, iaculis eget ex ac, rutrum scelerisque nisl. Cras finibus dictum ex sed tincidunt. Morbi facilisis neque porta, blandit mauris quis, pharetra odio. Aliquam dictum quam quis elit auctor, at vestibulum ex pulvinar. Quisque lobortis a lectus quis faucibus. Nulla vitae pellentesque nibh, et fringilla erat. Praesent placerat ac est at tincidunt. Praesent ultricies a ex at ultrices. Etiam sed tincidunt elit. Nulla sagittis neque neque, ultrices dignissim sapien pellentesque faucibus. Donec tempor orci sed consectetur dictum. Ut viverra ut enim ac semper. Integer lacinia sem in arcu tempor faucibus eget non urna. Praesent vel nunc eu libero aliquet interdum non vitae elit. Maecenas pharetra ipsum dolor, et iaculis elit ornare ac.
+    function render() {
+      reasonEl.textContent = REASONS[idx];
+    }
 
-Aenean scelerisque ullamcorper est aliquet blandit. Donec ac tellus enim. Vivamus quis leo mattis, varius arcu at, convallis diam. Donec ac leo at nunc viverra molestie ac viverra nisi. Proin interdum at turpis at varius. Nunc sit amet ex suscipit, convallis ligula eu, pretium turpis. Sed ultricies neque vel mi malesuada, et mollis risus lobortis. Sed condimentum venenatis mauris, id elementum dolor gravida ac. Sed sodales tempus neque, quis iaculis arcu tincidunt ut. Donec vitae faucibus dui. In hac habitasse platea dictumst. Donec erat ex, ullamcorper a massa a, porttitor porta ligula.
+    // Advance on click, wrapping around
+    btn.addEventListener('click', () => {
+      idx = (idx + 1) % REASONS.length;
+      render();
+    });
+
+    // Optional: tap the reason text itself to advance (nice on mobile)
+    reasonEl.addEventListener('click', () => btn.click());
+
+    // Initialize
+    render();
+  })();
+</script>
