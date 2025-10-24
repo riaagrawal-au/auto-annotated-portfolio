@@ -223,5 +223,5 @@ description: >-
 </script>
 
 
-> “Everybody should learn to program a computer, because it teaches you how to think.”
+> “... so that we can complete all the activities in a relationship”
 
