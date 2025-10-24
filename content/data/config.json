@@ -25,12 +25,6 @@
     "footer": {
         "type": "Footer",
         "primaryLinks": [
-            {
-                "type": "Link",
-                "label": "Contact",
-                "url": "mailto:ria.agrawal_ug2023@ashoka.edu.in",
-                "altText": ""
-            }
         ],
         "contacts": {
             "type": "ContactBlock",
