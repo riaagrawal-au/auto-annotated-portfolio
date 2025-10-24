@@ -159,3 +159,14 @@ layer(base);
         background-size: 100% 100%;
     }
 }
+/* Remove underlines from footer links */
+footer a {
+  text-decoration: none;
+  border-bottom: none;
+}
+
+footer a:hover,
+footer a:active {
+  text-decoration: none;
+  border-bottom: none;
+}
