@@ -3,9 +3,9 @@ type: ProjectLayout
 title: A Very Cool Activities Checklist
 colors: colors-a
 date: '2025-10-24'
-client: Concerns Adityaveer Singh Dahiya, Ria Agrawal
+client: Adityaveer Singh Dahiya, Ria Agrawal
 description: >-
-  It’s hard to imagine that I’ve that I wrote all this code by myself, probably because I worked with an entire team :) but they definitely followed my lead most of the time.
+  A comprehensive list of couple-y **activities** we're contractually obligated to do together. Best believe bowling will be the last activity we get around to doing.
 ---
 
 <!-- ✅ Project Checklist -->
@@ -18,25 +18,97 @@ description: >-
     <li>
       <label>
         <input type="checkbox" data-id="define-scope" />
-        <span>Go Bowling</span>
-      </label>
-    </li>
-    <li>
-      <label>
-        <input type="checkbox" data-id="collect-data" />
-        <span>Collect & clean dataset</span>
+        <span>Attending a Wedding together</span>
       </label>
     </li>
     <li>
       <label>
         <input type="checkbox" data-id="build-mvp" />
-        <span>Build MVP and write docs</span>
+        <span>Go to the beach together</span>
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox" data-id="build-mvp" />
+        <span>Pick up on a hobby together</span>
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox" data-id="build-mvp" />
+        <span>Getting mad crossed on campus</span>
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox" data-id="build-mvp" />
+        <span>Complete Overcooked 2</span>
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox" data-id="define-scope" />
+        <span>Cook an elaborate dish on campus</span>
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox" data-id="build-mvp" />
+        <span>Get a feet massage (this is a totally normal thing people do, I had it verified, don't question it)</span>
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox" data-id="build-mvp" />
+        <span>Go to the mountains together</span>
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox" data-id="build-mvp" />
+        <span>Stacking donuts</span>
+      </label>
+      <li>
+      <label>
+        <input type="checkbox" data-id="build-mvp" />
+        <span>Ria packs Po's suitcase for a change</span>
+      </label>
+    </li>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox" data-id="collect-data" />
+        <span>Adopt a pet plant (perhaps a succulent? or a flower if we're feeling ambitious)</span>
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox" data-id="build-mvp" />
+        <span>Hennafy your face!</span>
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox" data-id="build-mvp" />
+        <span>Develop a Mini Game</span>
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox" data-id="build-mvp" />
+        <span>Kiss infront of your Ring DoorCam</span>
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox" data-id="build-mvp" />
+        <span>Going to a Delhi Darshan together.</span>
       </label>
     </li>
     <li>
       <label>
         <input type="checkbox" data-id="deploy" />
-        <span>Deploy and share live link</span>
+        <span>Build a Minecraft World on Survial Mode (and I get Admin controls)</span>
       </label>
     </li>
   </ul>
