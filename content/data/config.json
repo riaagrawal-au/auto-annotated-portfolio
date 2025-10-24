@@ -7,6 +7,20 @@
         "isSticky": false,
         "title": "Home",
         "isTitleVisible": true,
+                "primaryLinks": [
+        
+            {
+                "type": "Link",
+                "label": "Projects",
+                "url": "/projects"
+            }
+        ],
+        "socialLinks": [],
+        "styles": {
+            "self": {
+                "width": "full"
+            }
+        }
     },
     "footer": {
         "type": "Footer",
