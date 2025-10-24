@@ -7,31 +7,28 @@ client: Awesome client
 description: >-
   It’s hard to imagine that I’ve that I wrote all this code by myself, probably because I worked with an entire team :) but they definitely followed my lead most of the time.
 ---
-<!-- 💖 One-line "I love you because..." cycler (random start) -->
-<section id="love-because" style="margin:1rem 0;">
-  <p style="display:flex; align-items:center; flex-wrap:wrap; gap:.5rem; font-size:1.1rem; line-height:1.6;">
-    <span>I love you because&nbsp;</span>
-    <span id="love-reason"
-          aria-live="polite"
-          style="font-weight:600; white-space:nowrap;"></span>
-    <button id="love-next"
-            type="button"
-            style="margin-left:.5rem; padding:.35rem .6rem; border:1px solid rgba(0,0,0,.15); border-radius:8px; background:#fff; cursor:pointer;">
-      ↻ Next
-    </button>
-  </p>
-  <noscript><em>(Enable JavaScript to rotate reasons.)</em></noscript>
-</section>
+<!-- 💖 One-line "I love you because..." with inline Next button -->
+<span id="love-line" style="display:inline-flex; align-items:center; gap:.5rem; flex-wrap:wrap;">
+  <span>I love you because&nbsp;</span>
+  <span id="love-reason" aria-live="polite" style="font-weight:600;">you are very kind</span>
+  <button id="love-next"
+    type="button"
+    aria-label="Show next reason"
+    style="
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:.25rem .5rem; line-height:1; border:1px solid currentColor;
+      border-radius:6px; background:transparent; color:inherit; cursor:pointer;
+      font: inherit; opacity:.9;
+    "
+  >↻</button>
+</span>
 
 <script>
   (function () {
-    const ROOT = document.getElementById('love-because');
-    if (!ROOT) return;
-
-    // 👉 Edit this list to whatever you want (add/remove freely)
+    // ✏️ Edit these (order = sequence)
     const REASONS = [
-      "of your hair",
       "you are very kind",
+      "of your hair",
       "you light up every room",
       "you’re brave and thoughtful",
       "you make me laugh",
@@ -44,24 +41,22 @@ description: >-
 
     const reasonEl = document.getElementById('love-reason');
     const btn = document.getElementById('love-next');
+    if (!reasonEl || !btn) return;
 
-    // ▶ Start at a random index (no persistence)
-    let idx = Math.floor(Math.random() * REASONS.length);
-
+    // Start at the first item and advance sequentially
+    let idx = 0;
     function render() {
       reasonEl.textContent = REASONS[idx];
     }
-
-    // Advance on click, wrapping around
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', function () {
       idx = (idx + 1) % REASONS.length;
       render();
     });
 
-    // Optional: tap the reason text itself to advance (nice on mobile)
+    // Also let users tap the reason text to advance (nice on mobile)
     reasonEl.addEventListener('click', () => btn.click());
 
-    // Initialize
+    // Initial paint (matches the first item above)
     render();
   })();
 </script>
