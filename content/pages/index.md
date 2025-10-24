@@ -14,12 +14,9 @@ sections:
     colors: colors-f
     backgroundSize: full
     title: >-
-      I’m a developer, digital artist, consultant and a bunch of other
-      impressive titles and buzz words.
+      Hi Po!
     subtitle: >-
-      This is my info—I’m sharing it all this with ya’ll to impress you with all
-      the hard work I’ve done in the past few years. Once you’re impressed, you
-      can continue to scroll down to see more details and credentials about me.
+      Can't believe it's already been 30 days with you (or, more accurately, 184 days since we've been dating but apparently we were just friends for the first 5 months)! Here's me attempting to code and vibe-code for our first month anniversary. I hope you like it and oversee some pages that I can't seem to edit anymore. 
     styles:
       self:
         height: auto
