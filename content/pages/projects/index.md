@@ -11,52 +11,11 @@ backgroundImage:
   opacity: 100
 styles:
   self:
-    height: screen
+    height: auto
     width: full
-    padding: []
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+    padding:
+      - pt-0
+      - pb-0
+      - pl-0
+      - pr-0
 ---
