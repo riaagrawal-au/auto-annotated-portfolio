@@ -4,7 +4,7 @@ title: A Perfunctory List of Why I Love You
 colors: colors-a
 date: '2025-10-24'
 client: Adityaveer Singh Dahiya
-description: If you ever find your wondering, why is it that my funny, perfect, beautiful girlfriend loves me so much, here's a quick rundown of 31 reasons why
+description: If you ever find your wondering, why is it that my funny perfect beautiful girlfriend loves me so much, here's a quick rundown of 31 reasons why
 ---
 
 <!-- 💖 "I love you because..." one-liner (refresh to change) -->
