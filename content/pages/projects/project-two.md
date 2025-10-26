@@ -1,11 +1,11 @@
 ---
 type: ProjectLayout
-title: A A Perfunctory List of Hidden Reasons Why I Love You
+title: A Perfunctory List of Hidden Reasons Why I Love You
 colors: colors-a
 date: '2025-10-26'
 client: Adityaveer Singh Dahiya
 description: >-
-  If you ever find yourself wondering why your funny, beautiful, smart girlfriend loves you so much (a very valid question, by the way), here's 31 reasons why. Hover to find them all!
+  If you ever find yourself wondering why your funny, beautiful, smart girlfriend loves you so much (a very valid question, by the way), here's 31 reasons why. Heads up, they're very well hidden and difficult to find.
 ---
 
 <section id="love-reasons">
