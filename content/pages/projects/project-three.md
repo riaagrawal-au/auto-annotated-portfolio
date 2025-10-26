@@ -5,7 +5,7 @@ colors: colors-a
 date: '2025-10-26'
 client: Adityaveer Singh Dahiya
 description: >-
-I don't want to hear it — sloppy penmanship, shit splleing. I don't write often, and neither am I an English-CW major, so bear with me here. Happy One (Six) Month(s) Together!
+  I don't want to hear it — sloppy penmanship, shit spelling. I don't write often, and neither am I an English-CW major, so bear with me here. Happy One (Six) Month(s) Together!
 ---
 
 Po,
