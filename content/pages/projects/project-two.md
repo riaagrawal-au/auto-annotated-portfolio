@@ -1,16 +1,16 @@
 ---
 type: ProjectLayout
-title: A Perfunctory List of Reasons Why I Love You
+title: A A Perfunctory List of Hidden Reasons Why I Love You
 colors: colors-a
 date: '2025-10-26'
-client: Adityaveer Singh Dahiya, Ria Agrawal
+client: Adityaveer Singh Dahiya
 description: >-
   If you ever find yourself wondering why your funny, beautiful, smart girlfriend loves you so much (a very valid question, by the way), here's 31 reasons why. Hover to find them all!
 ---
 
 <section id="love-reasons">
   <h2>I LOVE YOU BECAUSE...</h2>
-  <p class="subtitle">Hover over each box to discover all 31 reasons</p>
+  <p class="subtitle">Hover over each box to discover all 31 reasons (one for each day since we told each other that we loved each other lol)</p>
   
   <div class="grid-container">
     <div class="reason-box">you are very kind</div>
@@ -70,13 +70,15 @@ description: >-
   
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
   }
   
   .reason-box {
-    aspect-ratio: 1;
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
