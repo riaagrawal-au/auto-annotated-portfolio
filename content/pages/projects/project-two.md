@@ -5,13 +5,13 @@ colors: colors-a
 date: '2025-10-26'
 client: Adityaveer Singh Dahiya, Ria Agrawal
 description: >-
-  If you ever find yourself wondering why your funny, beautiful, smart girlfriend loves you so much (a very valid question, by the way), here's 31 reasons why.
+  If you ever find yourself wondering why your funny, beautiful, smart girlfriend loves you so much (a very valid question, by the way), here's 31 reasons why!
 ---
 
 <section id="love-reason">
   <div class="reason-container">
     <h2>I love you because...</h2>
-    <p id="reason-text" class="reason"></p>
+    <p id="reason-text" class="reason">Loading...</p>
     <div class="refresh-hint">Press ⌘+R to see another reason</div>
   </div>
 </section>
@@ -57,7 +57,14 @@ description: >-
 </style>
 
 <script>
-  (function() {
+  // Wait for DOM to be ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', showRandomReason);
+  } else {
+    showRandomReason();
+  }
+  
+  function showRandomReason() {
     const reasons = [
       "you are very kind",
       "of your hair",
@@ -102,5 +109,5 @@ description: >-
     if (reasonElement) {
       reasonElement.textContent = randomReason;
     }
-  })();
+  }
 </script>
