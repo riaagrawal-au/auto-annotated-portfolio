@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HERE'S TO KEEPING UP WITH TRADITION, MY VALENTINE</title>
+    <style>
+        body { background-color: #fff5f5; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        
+        .container { position: relative; }
+
+        /* The Flower Top */
+        .rose {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: #ff4d6d;
+            border-radius: 50% 50% 10% 10%;
+            z-index: 2;
+        }
+
+        /* The Stem */
+        .stem {
+            width: 8px;
+            height: 150px;
+            background: #2d6a4f;
+            margin: -10px auto;
+            border-radius: 0 0 4px 4px;
+        }
+
+        /* The Leaf */
+        .leaf {
+            width: 40px;
+            height: 20px;
+            background: #2d6a4f;
+            border-radius: 40px 0;
+            position: absolute;
+            top: 140px;
+            left: 50px;
+            transform: rotate(-20deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="rose"></div>
+        <div class="stem"></div>
+        <div class="leaf"></div>
+    </div>
+</body>
+</html>
